@@ -14,12 +14,19 @@ class Globe {
 		this.renderer = new THREE.WebGLRenderer({ canvas: this.canvas });
 		this.clock = new THREE.Clock();
 		this.debugger = null;
-		this.light = null;
 		this.controls = null;
+		this.light = null;
+		this.mouse = {
+			x: null,
+			y: null,
+			isPressed: false
+		};
 		this.meshes = {
 			sphere: null
 		}
 	};
+
+	
 
 	init = () => {
 		this.createCamera();
@@ -44,9 +51,15 @@ class Globe {
 
 	createDebugger = () => {
 		this.debugger = new dat.GUI();
-		this.debugger.add(this.meshes.sphere.rotation, 'x').min(0).max(10);
-		this.debugger.add(this.meshes.sphere.rotation, 'y').min(0).max(10);
-		this.debugger.add(this.meshes.sphere.rotation, 'z').min(0).max(10);
+		const sphere = this.debugger.addFolder('Sphere');
+		const sphereRotation = sphere.addFolder('Rotation');
+		sphereRotation.add(this.meshes.sphere.rotation, 'x').min(0).max(10);
+		sphereRotation.add(this.meshes.sphere.rotation, 'y').min(0).max(10);
+		sphereRotation.add(this.meshes.sphere.rotation, 'z').min(0).max(10);
+		const spherePosition = sphere.addFolder('Position');
+		spherePosition.add(this.meshes.sphere.position, 'x').min(0).max(10);
+		spherePosition.add(this.meshes.sphere.position, 'y').min(0).max(10);
+		spherePosition.add(this.meshes.sphere.position, 'z').min(0).max(10);
 	};
 
 	createTrackball = () => {
@@ -79,7 +92,9 @@ class Globe {
 
 	createMesh = () => {
 		const geometry = new THREE.SphereBufferGeometry(3, 32, 32);
-		const material = new THREE.MeshBasicMaterial({ map: new THREE.TextureLoader().load('./maps/map-world.png') });
+		const material = new THREE.MeshBasicMaterial({ 
+			map: new THREE.TextureLoader().load('/maps/map-world-green.svg'),
+		});
 		this.meshes.sphere = new THREE.Mesh(geometry, material);	
 		this.scene.add(this.meshes.sphere);
 	};

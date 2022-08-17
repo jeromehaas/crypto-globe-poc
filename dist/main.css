@@ -1,0 +1,542 @@
+* {
+		margin: 0;
+		padding: 0;
+}
+@font-face {
+  font-family: 'Icon';
+  src: url(assets/fonts/34ae75128cf89ca3.eot);
+  src: url(assets/fonts/34ae75128cf89ca3.eot) format('embedded-opentype'),
+    url(assets/fonts/3783a4861cd31563.woff2) format('woff2'),
+    url(assets/fonts/a0fc74076952ab29.woff) format('woff'),
+    url(assets/fonts/79d650664d1c0017.ttf) format('truetype'),
+    url(assets/images/0f36d6dec326c311.svg) format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*--------------------------------
+
+Icon Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: 'Icon';
+  /* src: url('/fonts/Icon.eot');
+  src: url('/fonts/Icon.eot') format('embedded-opentype'), url('/fonts/Icon.woff2') format('woff2'), url('/fonts/Icon.woff') format('woff'), url('/fonts/Icon.ttf') format('truetype'), url('/fonts/Icon.svg') format('svg'); */
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+	base class definition
+-------------------------*/
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'Icon';
+  color: inherit;
+  flex-shrink: 0;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*------------------------
+  change icon size
+-------------------------*/
+/* relative units */
+.icon-sm {
+  font-size: 0.8em;
+}
+.icon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.icon-16 {
+  font-size: 16px;
+}
+.icon-32 {
+  font-size: 32px;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+.icon-is-spinning {
+  animation: icon-spin 1s infinite linear;
+}
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+.icon-rotate-90 {
+  transform: rotate(90deg);
+}
+.icon-rotate-180 {
+  transform: rotate(180deg);
+}
+.icon-rotate-270 {
+  transform: rotate(270deg);
+}
+.icon-flip-y {
+  transform: scaleY(-1);
+}
+.icon-flip-x {
+  transform: scaleX(-1);
+}
+/*------------------------
+	icons
+-------------------------*/
+
+.icon-ic_ape::before {
+  content: "\ea02";
+}
+
+.icon-ic_ada::before {
+  content: "\ea03";
+}
+
+.icon-ic_amp::before {
+  content: "\ea04";
+}
+
+.icon-ic_zil::before {
+  content: "\ea05";
+}
+
+.icon-ic_zec::before {
+  content: "\ea06";
+}
+
+.icon-ic_yfi::before {
+  content: "\ea07";
+}
+
+.icon-ic_xym::before {
+  content: "\ea08";
+}
+
+.icon-ic_xtz::before {
+  content: "\ea09";
+}
+
+.icon-ic_xrp::before {
+  content: "\ea0a";
+}
+
+.icon-ic_xmr::before {
+  content: "\ea0b";
+}
+
+.icon-ic_xlm::before {
+  content: "\ea0c";
+}
+
+.icon-ic_xem::before {
+  content: "\ea0d";
+}
+
+.icon-ic_xec::before {
+  content: "\ea0e";
+}
+
+.icon-ic_xdc::before {
+  content: "\ea0f";
+}
+
+.icon-ic_wbtc::before {
+  content: "\ea10";
+}
+
+.icon-ic_waves::before {
+  content: "\ea11";
+}
+
+.icon-ic_vet::before {
+  content: "\ea12";
+}
+
+.icon-ic_ust::before {
+  content: "\ea13";
+}
+
+.icon-ic_usdt::before {
+  content: "\ea14";
+}
+
+.icon-ic_usdp::before {
+  content: "\ea15";
+}
+
+.icon-ic_usdn::before {
+  content: "\ea16";
+}
+
+.icon-ic_usdc::before {
+  content: "\ea17";
+}
+
+.icon-ic_uni::before {
+  content: "\ea18";
+}
+
+.icon-ic_tusd::before {
+  content: "\ea19";
+}
+
+.icon-ic_ttt::before {
+  content: "\ea1a";
+}
+
+.icon-ic_trx::before {
+  content: "\ea1b";
+}
+
+.icon-ic_theta::before {
+  content: "\ea1c";
+}
+
+.icon-ic_tfuel::before {
+  content: "\ea1d";
+}
+
+.icon-ic_terra::before {
+  content: "\ea1e";
+}
+
+.icon-ic_stx::before {
+  content: "\ea1f";
+}
+
+.icon-ic_sol::before {
+  content: "\ea20";
+}
+
+.icon-ic_shib::before {
+  content: "\ea21";
+}
+
+.icon-ic_scrt::before {
+  content: "\ea22";
+}
+
+.icon-ic_sand::before {
+  content: "\ea23";
+}
+
+.icon-ic_rvn::before {
+  content: "\ea24";
+}
+
+.icon-ic_rune::before {
+  content: "\ea25";
+}
+
+.icon-ic_rose::before {
+  content: "\ea26";
+}
+
+.icon-ic_qnt::before {
+  content: "\ea27";
+}
+
+.icon-ic_polygon::before {
+  content: "\ea28";
+}
+
+.icon-ic_one::before {
+  content: "\ea29";
+}
+
+.icon-ic_omi::before {
+  content: "\ea2a";
+}
+
+.icon-ic_okb::before {
+  content: "\ea2b";
+}
+
+.icon-ic_nexo::before {
+  content: "\ea2c";
+}
+
+.icon-ic_neo::before {
+  content: "\ea2d";
+}
+
+.icon-ic_near::before {
+  content: "\ea2e";
+}
+
+.icon-ic_mkr::before {
+  content: "\ea2f";
+}
+
+.icon-ic_miota::before {
+  content: "\ea30";
+}
+
+.icon-ic_mina::before {
+  content: "\ea31";
+}
+
+.icon-ic_matic::before {
+  content: "\ea32";
+}
+
+.icon-ic_mana::before {
+  content: "\ea33";
+}
+
+.icon-ic_lunav::before {
+  content: "\ea34";
+}
+
+.icon-ic_ltc::before {
+  content: "\ea35";
+}
+
+.icon-ic_lrc::before {
+  content: "\ea36";
+}
+
+.icon-ic_link::before {
+  content: "\ea37";
+}
+
+.icon-ic_leo::before {
+  content: "\ea38";
+}
+
+.icon-ic_ksm::before {
+  content: "\ea39";
+}
+
+.icon-ic_knc::before {
+  content: "\ea3a";
+}
+
+.icon-ic_klay::before {
+  content: "\ea3b";
+}
+
+.icon-ic_kda::before {
+  content: "\ea3c";
+}
+
+.icon-ic_kcs::before {
+  content: "\ea3d";
+}
+
+.icon-ic_kava::before {
+  content: "\ea3e";
+}
+
+.icon-ic_iotx::before {
+  content: "\ea3f";
+}
+
+.icon-ic_icx::before {
+  content: "\ea40";
+}
+
+.icon-ic_icp::before {
+  content: "\ea41";
+}
+
+.icon-ic_ht::before {
+  content: "\ea42";
+}
+
+.icon-ic_hot::before {
+  content: "\ea43";
+}
+
+.icon-ic_hnt::before {
+  content: "\ea44";
+}
+
+.icon-ic_hbar::before {
+  content: "\ea45";
+}
+
+.icon-ic_grt::before {
+  content: "\ea46";
+}
+
+.icon-ic_gmt::before {
+  content: "\ea47";
+}
+
+.icon-ic_glmr::before {
+  content: "\ea48";
+}
+
+.icon-ic_gala::before {
+  content: "\ea49";
+}
+
+.icon-ic_ftt::before {
+  content: "\ea4a";
+}
+
+.icon-ic_ftm::before {
+  content: "\ea4b";
+}
+
+.icon-ic_frax::before {
+  content: "\ea4c";
+}
+
+.icon-ic_flow::before {
+  content: "\ea4d";
+}
+
+.icon-ic_fil::before {
+  content: "\ea4e";
+}
+
+.icon-ic_eth::before {
+  content: "\ea4f";
+}
+
+.icon-ic_etc::before {
+  content: "\ea50";
+}
+
+.icon-ic_eos::before {
+  content: "\ea51";
+}
+
+.icon-ic_enj::before {
+  content: "\ea52";
+}
+
+.icon-ic_egld::before {
+  content: "\ea53";
+}
+
+.icon-ic_dot::before {
+  content: "\ea54";
+}
+
+.icon-ic_dot_2::before {
+  content: "\ea55";
+}
+
+.icon-ic_doge::before {
+  content: "\ea56";
+}
+
+.icon-ic_dfi::before {
+  content: "\ea57";
+}
+
+.icon-ic_dcr::before {
+  content: "\ea58";
+}
+
+.icon-ic_dash::before {
+  content: "\ea59";
+}
+
+.icon-ic_dai::before {
+  content: "\ea5a";
+}
+
+.icon-ic_cvx::before {
+  content: "\ea5b";
+}
+
+.icon-ic_crv::before {
+  content: "\ea5c";
+}
+
+.icon-ic_cro::before {
+  content: "\ea5d";
+}
+
+.icon-ic_comp::before {
+  content: "\ea5e";
+}
+
+.icon-ic_chz::before {
+  content: "\ea5f";
+}
+
+.icon-ic_celo::before {
+  content: "\ea60";
+}
+
+.icon-ic_cake::before {
+  content: "\ea61";
+}
+
+.icon-ic_busd::before {
+  content: "\ea62";
+}
+
+.icon-ic_btt::before {
+  content: "\ea63";
+}
+
+.icon-ic_btc::before {
+  content: "\ea64";
+}
+
+.icon-ic_bsv::before {
+  content: "\ea65";
+}
+
+
+.hero {
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.globe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: auto;
+}
+
+.globe__canvas {
+	width: 100%;
+	height: 100%;
+}
+
+.icons {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.icons__icon {
+	color: #041834;
+	position: absolute;
+	top: calc(50% - 8px);
+	left: calc(50% - 8px);
+};
+
+
+/*# sourceMappingURL=main.css.map*/
